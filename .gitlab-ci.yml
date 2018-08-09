@@ -12,9 +12,9 @@ build:
     - apt update && apt -y install make autoconf sqlite3 libsqlite3-dev
   script: 
     - gcc -o list_tables list_tables.c -lsqlite3
-  #artifacts:
-  #  paths:
-  #    - mybinary
+  artifacts:
+    paths:
+      - ./list_tables
   # depending on your build setup it's most likely a good idea to cache outputs to reduce the build time
   # cache:
   #   paths:
